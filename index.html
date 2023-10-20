@@ -1,21 +1,21 @@
 <html>
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114306992-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5Y1T7F1GY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      gtag('config', 'UA-114306992-1');
-    </script>
+    gtag('config', 'G-M5Y1T7F1GY');
+  </script>
     <title>Rangoli maker</title>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#000">
     <meta property="og:title" content="Rangoli maker" />
     <meta property="og:description" content="Convert your random doodles to awesome rangolis!">
-    <meta property="og:url" content="https://savvysiddharth.github.io/rangoli-maker/" />
-    <meta property="og:image" content="https://savvysiddharth.github.io/rangoli-maker/rangoli.png">
+    <meta property="og:url" content="https://alacrity.dev/aigsq-diwali-rangoli/" />
+    <meta property="og:image" content="https://alacrity.dev/aigsq-diwali-rangoli/rangoli.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <script src="lib/p5.min.js"></script>
     <script src="lib/p5.dom.min.js"></script>
@@ -27,9 +27,6 @@
     <div class="slider">
       <input type="range" min="4" max="20" value="5" id="myRange" onchange="setDiameterSize(this.value)">
     </div>
-    <a style="margin-left: 10px;" href="https://github.com/savvysiddharth/rangoli-maker" target="_blank">
-      <button id="github"> <i class="ion-social-github"></i></button>
-    </a>
     <button id="clear" onclick="clearCanvas()">
       <i class="ion-android-refresh"></i>
     </button>
@@ -38,5 +35,4 @@
     <img src="random-colors.png" id="random-btn" title="get random color at each stroke" onclick="doRandomColors()">
   </body>
   <script src="rangoli.js"></script>
-  <!-- by @savvysiddharth -->
 </html>
