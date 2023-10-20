@@ -1,3 +1,6 @@
+// This fixed it, preferably this would be hidden away though
+document.addEventListener('touchstart', {});
+
 const clearbtn = document.querySelector("#clear");
 const colorpicker = document.querySelector("#colpick");
 
@@ -122,7 +125,7 @@ function rgbToHex(r,g,b) {
   var toHex = function (rgb) {
     var hex = Number(rgb).toString(16);
     if (hex.length < 2) {
-         hex = "0" + hex;
+      hex = "0" + hex;
     }
     return hex;
   };
@@ -135,3 +138,19 @@ function rgbToHex(r,g,b) {
 
 
 hideButtons(); // initially hidden
+
+/* prevents the mobile browser from processing some default
+ * touch events, like swiping left for "back" or scrolling
+ * the page.
+ */
+function touchStarted(){
+  return false;
+}
+
+function touchMoved(){
+  return false;
+}
+
+function touchEnded(){
+  return false;
+}
